@@ -2,6 +2,14 @@ Ext.define('CustomApp', {
     extend: 'Rally.app.App',
     componentCls: 'app',
     
+    items: [
+        {html: 'my-first-app'},
+        {xtype: 'rallyreleasecombobox'},
+        {xtype: 'rallyiterationcombobox'}
+    ],
+    //layout: 'hbox',
+    
+    
     //Default funciton launched by app
     launch: function() {
         console.log('Test log to console');
